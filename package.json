@@ -1,0 +1,31 @@
+{
+  "name": "my-ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.html",
+    "build-prod": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "autoprefix": "^1.0.1",
+    "fix": "^0.0.6",
+    "postcss": "^7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "to": "^0.2.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.4",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "autoprefixer": "^9",
+    "parcel-bundler": "^1.12.5",
+    "postcss-modules": "^4.3.0"
+  }
+}
