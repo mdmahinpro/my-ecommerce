@@ -117,7 +117,8 @@ export default function Index() {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                    className="text-gray-900 hover:bg-gray-700 hover:text-white
+                    px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Home
                   </a>
@@ -125,23 +126,26 @@ export default function Index() {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                    className="text-gray-900 hover:bg-gray-700 hover:text-white
+                    px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Furniture
+                    Order Review
                   </a>
                 </li>
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                    className="text-gray-900 hover:bg-gray-700 hover:text-white
+                    px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Lookbook
+                   Manage Inventory
                   </a>
                 </li>
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                    className="text-gray-900 hover:bg-gray-700 hover:text-white
+                    px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Support
                   </a>
