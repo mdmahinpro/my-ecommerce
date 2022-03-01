@@ -112,11 +112,12 @@ export default function Index() {
           {/* For large screens */}
           <div className="dark:bg-gray-900 bg-gray-50 px-6 py-9">
             <div className="container mx-auto flex items-center justify-between">
-              <img className="h-10 w-10" src={logo} alt="" />
+              <a href="/shop"><img className="h-10 w-10" src={logo} alt="" /></a>
+              
               <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8">
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="/shop"
                     className="text-gray-900 hover:bg-gray-700 hover:text-white
                     px-3 py-2 rounded-md text-sm font-medium"
                   >
@@ -125,7 +126,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="/orderreview"
                     className="text-gray-900 hover:bg-gray-700 hover:text-white
                     px-3 py-2 rounded-md text-sm font-medium"
                   >
@@ -134,7 +135,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="manageinventory"
                     className="text-gray-900 hover:bg-gray-700 hover:text-white
                     px-3 py-2 rounded-md text-sm font-medium"
                   >
@@ -143,7 +144,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="/support"
                     className="text-gray-900 hover:bg-gray-700 hover:text-white
                     px-3 py-2 rounded-md text-sm font-medium"
                   >
@@ -213,6 +214,7 @@ export default function Index() {
                       />
                     </svg>
                   </button>
+                  <a href="/orderreview">
                   <button
                     aria-label="go to cart"
                     className="text-gray-800 dark:hover:text-gray-300 dark:text-white focus:outline-none focus:ring-2 focus:ring-gray-800"
@@ -248,6 +250,7 @@ export default function Index() {
                       />
                     </svg>
                   </button>
+                  </a>
                 </div>
                 <div className="flex lg:hidden">
                   <button
