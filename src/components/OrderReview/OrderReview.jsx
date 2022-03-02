@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import fakeData from "../../fakeData/products.JSON";
-import successful from '../../images/succesfull.jpg';
+import successful from '../../images/successfull.png';
 import { clearTheCart, deleteFromDb, getStoredCart } from "../../utilities/fakedb";
 import Cart from "../Cart/Cart";
 import ReviewItem from "../ReviewItem/ReviewItem";
@@ -45,7 +45,7 @@ function OrderReview() {
           ></ReviewItem>
         ))}
       </div>
-      <div className="text-center w-2/4">
+      <div className="text-center w-full">
        {
          orderPlaced && <img src={successful}></img>
        }

@@ -17,7 +17,7 @@ function Cart({children,cart}) {
 
         <div className="flow-root">
           <dl className="-my-4 text-sm divide-y divide-gray-200">
-          <div className="py-4 justify-between">
+          <div className="py-4 flex justify-between">
               <dt className="text-gray-600">Total Order Items</dt>
               <dd className="font-medium text-gray-900">{cart.length}</dd>
             </div>
