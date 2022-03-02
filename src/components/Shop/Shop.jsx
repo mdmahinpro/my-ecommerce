@@ -40,7 +40,7 @@ export default function Shop() {
   }
 
   return (
-    <div className='shop_container flex'>
+    <div className='shop_container lg:flex'>
       <div className='shop__product-container w-3/4'>
         {
           products.map(product=><Product key={product.key} showAddToCart={true} product={product}  handleAddToCart={handleAddToCart}></Product>)

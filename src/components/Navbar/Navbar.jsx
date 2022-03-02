@@ -63,11 +63,11 @@ export default function Index() {
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    stroke-width="2"
+                    strokeWidth="2"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
                     />
                   </svg>
@@ -210,11 +210,11 @@ export default function Index() {
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
-                        stroke-width="2"
+                        strokeWidth="2"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
                         />
                       </svg>
@@ -407,7 +407,7 @@ export default function Index() {
               <ul className="flex flex-col space-y-6">
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="/shop"
                     className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
                   >
                     Home
@@ -433,7 +433,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="/login"
                     className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
                   >
                     Furniture
@@ -459,7 +459,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="/login"
                     className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
                   >
                     Lookbook
@@ -485,7 +485,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="/login"
                     className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
                   >
                     Support
@@ -515,7 +515,7 @@ export default function Index() {
               <ul className="flex flex-col space-y-8 bg-gray-50 w-full py-10 p-4 dark:bg-gray-800">
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="/login"
                     className="dark:text-white text-gray-800 flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                   >
                     <div>
@@ -555,7 +555,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="/login"
                     className="dark:text-white text-gray-800 flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                   >
                     <div>
