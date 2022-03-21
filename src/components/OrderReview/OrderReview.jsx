@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import fakeData from "../../fakeData/products.JSON";
 import successful from '../../images/successfull.png';
-import { clearTheCart, deleteFromDb, getStoredCart } from "../../utilities/fakedb";
+import { deleteFromDb, getStoredCart } from "../../utilities/fakedb";
 import Cart from "../Cart/Cart";
 import ReviewItem from "../ReviewItem/ReviewItem";
 
 function OrderReview() {
   const [cart, setCart] = useState([]);
   const [orderPlaced, setOrderPlaced] = useState(false)
+  let navigate=useNavigate()
 
-  const handlePlaceOrder=()=>{
-    setCart([])
-    setOrderPlaced(true)
-    clearTheCart()
+  const handleProceedCheckout=()=>{
+    navigate('/shipment')
+    console.log("SHipment clicked");
   }
   ///Remove Item from DB
   const handleRemoveItem = (key) => {
@@ -50,15 +50,15 @@ function OrderReview() {
          orderPlaced && <img src={successful}></img>
        }
         <Cart cart={cart}>
-        <Link to="/orderreview">
+        
         <button
-          onClick={handlePlaceOrder}
+          onClick={handleProceedCheckout}
           type="submit"
           className="w-full bg-indigo-600 border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500"
         >
-          Place Your Order
+          Proceed Checkout
         </button>
-        </Link>
+  
         </Cart>
       </div>
     </div>

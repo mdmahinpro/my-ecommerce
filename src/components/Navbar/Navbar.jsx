@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { Link } from "react-router-dom";
+import { UserContext } from "../../App";
 import logo from "../../images/logo.png";
 
 export default function Index() {
   const [searchInput, setSearchInput] = useState(true);
   const [mdOptionsToggle, setMdOptionsToggle] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
+  const [loggedInUser,setLoggedInUser] = useContext(UserContext)
 
   return (
     <div className="dark:bg-gray-900">
@@ -120,40 +123,40 @@ export default function Index() {
 
               <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8">
                 <li>
-                  <a
-                    href="/shop"
+                  <Link
+                  to="/shop"
                     className="text-gray-900 hover:bg-gray-700 hover:text-white
                     px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/orderreview"
+                  <Link
+                    to="/orderreview"
                     className="text-gray-900 hover:bg-gray-700 hover:text-white
                     px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Order Review
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="manageinventory"
+                  <Link
+                    to="manageinventory"
                     className="text-gray-900 hover:bg-gray-700 hover:text-white
                     px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Manage Inventory
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/support"
+                  <Link
+                    to="/support"
                     className="text-gray-900 hover:bg-gray-700 hover:text-white
                     px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Support
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <div className="md:w-2/12 justify-end flex items-center space-x-4 xl:space-x-8">
@@ -197,9 +200,10 @@ export default function Index() {
                   />
                 </div>
                 <div className="hidden lg:flex items-center space-x-4 xl:space-x-8">
-                  <a href="/login">
+                  <Link to="/login">
                     <button
-                      aria-label="login"
+                    onClick={()=>setLoggedInUser({})}
+                      aria-label="login-logout"
                       className="text-gray-800 dark:hover:text-gray-300 dark:text-white focus:outline-none focus:ring-2 focus:ring-gray-800"
                     >
                       <svg
@@ -219,8 +223,8 @@ export default function Index() {
                         />
                       </svg>
                     </button>
-                  </a>
-                  <a href="/orderreview">
+                  </Link>
+                  <Link to="/orderreview">
                     <button
                       aria-label="go to cart"
                       className="text-gray-800 dark:hover:text-gray-300 dark:text-white focus:outline-none focus:ring-2 focus:ring-gray-800"
@@ -256,7 +260,7 @@ export default function Index() {
                         />
                       </svg>
                     </button>
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex lg:hidden">
                   <button
@@ -406,8 +410,8 @@ export default function Index() {
             <div className="mt-6 p-4">
               <ul className="flex flex-col space-y-6">
                 <li>
-                  <a
-                    href="/shop"
+                  <Link
+                    to="/shop"
                     className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
                   >
                     Home
@@ -429,11 +433,11 @@ export default function Index() {
                         />
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/login"
+                  <Link
+                    to="/login"
                     className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
                   >
                     Furniture
@@ -455,7 +459,7 @@ export default function Index() {
                         />
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a
