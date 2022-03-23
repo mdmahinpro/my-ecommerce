@@ -13,7 +13,6 @@ function OrderReview() {
 
   const handleProceedCheckout=()=>{
     navigate('/shipment')
-    console.log("SHipment clicked");
   }
   ///Remove Item from DB
   const handleRemoveItem = (key) => {

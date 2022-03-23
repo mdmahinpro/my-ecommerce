@@ -6,7 +6,6 @@ import { UserContext } from '../App';
 function PrivateOutlet() {
   // const authenTicate=true
     const [loggedInUser,setLoggedInUser]=useContext(UserContext)
-    console.log(loggedInUser.email);
 
   return (
     <div>

@@ -7,11 +7,12 @@ import firebaseConfig from "../../firebase.config";
 
 function Login() {
 
-  const location=useLocation()
-  let { from } = location.state || { from: { pathname: "/" } };
-  const navigate=useNavigate()
   const [loggedInUser , setLoggedInUser] = useContext(UserContext)
   // Handle Google SignIn
+  const location=useLocation()
+  const navigate=useNavigate()
+  const destination= location?.state?.from || '/'; 
+  
   const [user, setUser] = useState({
     isSigned: false,
     name: "",
@@ -34,7 +35,10 @@ function Login() {
         const newUser={...isSignedUser}
         setUser(newUser);
         setLoggedInUser(newUser)
-        navigate({from}, { replace: true })
+        navigate(destination);
+     
+     
+       
         
         
       })

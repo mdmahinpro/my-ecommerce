@@ -25,7 +25,6 @@ function Login() {
   let navigate=useNavigate()
   let location=useLocation()
   let {from} =location.state || {from:{pathname:'/'}};
-  console.log(from);
 
 
   let [loggedInUser,setLoggedInUser]=useContext(UserContext)
@@ -59,7 +58,6 @@ function Login() {
         })
         .catch((error) => {
           const errorMessage = error.message;
-          console.log(errorMessage);
         });
     }
     e.preventDefault();
