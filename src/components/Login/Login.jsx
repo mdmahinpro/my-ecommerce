@@ -11,7 +11,7 @@ function Login() {
   // Handle Google SignIn
   const location=useLocation()
   const navigate=useNavigate()
-  const destination= location?.state?.from || '/'; 
+
   
   const [user, setUser] = useState({
     isSigned: false,
@@ -35,7 +35,9 @@ function Login() {
         const newUser={...isSignedUser}
         setUser(newUser);
         setLoggedInUser(newUser)
-        navigate(destination);
+        if(location.state?.from){
+          navigate(location.state.from)
+        }
      
      
        

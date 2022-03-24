@@ -4,10 +4,10 @@ import Login from "./components/Login/Login.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import NotFound from "./components/NotFound/NotFound.jsx";
 import OrderReview from './components/OrderReview/OrderReview.jsx';
-import PrivateOutlet from "./components/PrivateOutlet.jsx";
 import ProductDetails from "./components/ProductDetails/ProductDetails.jsx";
 import Shipment from "./components/Shipment/Shipment.jsx";
 import Shop from "./components/Shop/Shop.jsx";
+import PrivateOutlet from "./PrivateOutlet";
 import Test1 from './Test1';
 
 export const UserContext= createContext()
